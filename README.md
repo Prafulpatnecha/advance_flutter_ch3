@@ -18,7 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ###
 <h1></h1>
-<h3 align="center"><i>Chat App</i></h3>
+<h3 align="center"><i>Material & Cupertino</i></h3>
 <h1></h1>
 <div align="center">
 <img src="https://github.com/Prafulpatnecha/advance_flutter_ch3/blob/master/img1.png" height=450px hspace=20>
