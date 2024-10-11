@@ -41,11 +41,11 @@ class ConnectivityPlusPage extends StatelessWidget {
                 children: [
                   Center(
                       child: Lottie.asset("assets/json/Animation - 1728626112092.json")),
-                  Align(
+                  const Align(
                       alignment: Alignment(0,-0.5),
                       child: Text("No internet connection",style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold),)),
                   Align(
-                      alignment: Alignment(0,0.5),
+                      alignment: const Alignment(0,0.5),
                       child: Text("Please check your connection \nagain, or connect to Wi-Fi",textAlign: TextAlign.center,style: TextStyle(color: Colors.orange.withOpacity(0.5)),)),
                 ],
               ),
