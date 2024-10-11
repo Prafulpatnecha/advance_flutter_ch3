@@ -138,6 +138,9 @@ class AdvancePage1 extends StatelessWidget {
             CupertinoDialogAction(child: Text("Time Picker",style: TextStyle(color: Colors.blue),),onPressed: () {
               showTimePicker(context: context, initialTime: TimeOfDay(hour: DateTime.now().hour, minute: DateTime.now().minute));
             },),
+            CupertinoDialogAction(child: Text("Connectivity",style: TextStyle(color: Colors.blue),),onPressed: () {
+              Get.toNamed("/conn_plus");
+            },),
           CupertinoTimerPicker(onTimerDurationChanged: (value) {
 
           },)
@@ -146,13 +149,12 @@ class AdvancePage1 extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(onPressed: () {
         showModalBottomSheet(context: context, builder:(context) {
-          return Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              CupertinoTimerPicker(onTimerDurationChanged: (value) {
+          return CupertinoDatePicker(
+            initialDateTime: DateTime.now(),
+            mode: CupertinoDatePickerMode.dateAndTime,
+            onDateTimeChanged: (DateTime newDate) {
 
-              },),
-            ],
+            },
           );
         },);
       },child: Icon(Icons.access_time_filled_rounded),backgroundColor: Colors.grey.shade400,),
