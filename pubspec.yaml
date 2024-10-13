@@ -38,6 +38,7 @@ dependencies:
   get: ^4.6.6
   connectivity_plus: ^6.0.5
   lottie: ^3.1.2
+  flutter_inappwebview: ^6.1.5
 #  flutter_animate: ^4.5.0
 
 dev_dependencies:

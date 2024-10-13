@@ -138,8 +138,11 @@ class AdvancePage1 extends StatelessWidget {
             CupertinoDialogAction(child: Text("Time Picker",style: TextStyle(color: Colors.blue),),onPressed: () {
               showTimePicker(context: context, initialTime: TimeOfDay(hour: DateTime.now().hour, minute: DateTime.now().minute));
             },),
-            CupertinoDialogAction(child: Text("Connectivity",style: TextStyle(color: Colors.blue),),onPressed: () {
+            CupertinoDialogAction(child: Text("Connectivity",style: TextStyle(color: Colors.deepOrange),),onPressed: () {
               Get.toNamed("/conn_plus");
+            },),
+            CupertinoDialogAction(child: const Text("Multi-WebApp",style: TextStyle(color: Colors.blue),),onPressed: () {
+              Get.toNamed("/multi");
             },),
           CupertinoTimerPicker(onTimerDurationChanged: (value) {
 
